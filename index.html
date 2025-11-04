@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tela de Login - Exemplo</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="login-container">
+      <div class="card">
+        <form id="loginForm" class="login-form" onsubmit="return false">
+          <h1>Entrar</h1>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="seu@exemplo.com" required>
+
+          <label for="password">Senha</label>
+          <input id="password" name="password" type="password" placeholder="Senha" required minlength="4">
+
+          <button id="submitBtn" type="submit">Entrar</button>
+
+          <p class="small">Não tem conta? <a href="#" id="showRegister">Criar conta</a></p>
+          <p id="msg" class="msg"></p>
+        </form>
+
+        <form id="registerForm" class="register-form hide" onsubmit="return false">
+          <h1>Criar Conta</h1>
+          <label for="rname">Nome</label>
+          <input id="rname" name="rname" type="text" placeholder="Seu nome" required>
+
+          <label for="remail">Email</label>
+          <input id="remail" name="remail" type="email" placeholder="seu@exemplo.com" required>
+
+          <label for="rpassword">Senha</label>
+          <input id="rpassword" name="rpassword" type="password" placeholder="Senha (min 4)" required minlength="4">
+
+          <label for="rconfirm">Confirmar Senha</label>
+          <input id="rconfirm" name="rconfirm" type="password" placeholder="Repita a senha" required minlength="4">
+
+          <button id="registerBtn" type="submit">Criar conta</button>
+
+          <p class="small">Já tem conta? <a href="#" id="showLogin">Entrar</a></p>
+          <p id="rmsg" class="msg"></p>
+        </form>
+      </div>
+    </main>
+
+    <script src="login.js"></script>
+  </body>
+</html>

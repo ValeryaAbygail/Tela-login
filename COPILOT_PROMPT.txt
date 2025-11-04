@@ -1,0 +1,6 @@
+Atue como um Engenheiro DevOps Sênior. Meu professor pediu para eu explicar o fluxo de deploy que fiz. Meu projeto (HTML/JS/CSS + MongoDB Data API) está no GitHub com uma branch 'main' (produção) e 'staging' (homologação), e fiz o deploy na Vercel. Me explique em detalhes os conceitos:
+1) Qual a diferença entre a branch 'staging' e a 'main'? Por que não trabalhamos direto na 'main'?
+2) O que é um Pull Request e por que o usamos antes de fazer o 'merge'?
+3) O que são os arquivos .env e .gitignore? Qual a relação entre eles e segurança?
+4) O que são 'Environment Variables' (Secrets) na Vercel? Por que elas são necessárias se já tenho o .env?
+5) O que a Vercel faz quando eu dou 'push' na 'staging' vs. quando eu faço 'merge' na 'main'? (Explique o que é CI/CD nesse contexto).

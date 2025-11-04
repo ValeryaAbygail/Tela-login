@@ -1,0 +1,18 @@
+:root{
+  --bg:#f4f6f8;
+  --card:#ffffff;
+  --accent:#2b6cff;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Arial,sans-serif;background:var(--bg);display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
+.login-container{width:100%;max-width:420px;padding:20px}
+.card{background:var(--card);padding:18px;border-radius:10px;box-shadow:0 6px 18px rgba(20,30,50,0.08)}
+.login-form,.register-form{padding:10px}
+.login-form h1,.register-form h1{margin:0 0 12px 0;text-align:center}
+.login-form label,.register-form label{display:block;font-size:13px;margin:10px 0 6px}
+.login-form input,.register-form input{width:100%;padding:10px;border:1px solid #dfe6ef;border-radius:6px}
+.login-form button,.register-form button{width:100%;margin-top:12px;padding:12px;background:var(--accent);color:#fff;border:0;border-radius:8px;font-weight:600}
+.small{font-size:13px;text-align:center;margin-top:8px}
+.small a{color:var(--accent);text-decoration:none}
+.msg{margin-top:10px;color:#b00020;text-align:center;font-size:14px}
+.hide{display:none}
