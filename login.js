@@ -58,7 +58,7 @@ loginForm.addEventListener('submit', async (e) => {
     const users = getUsers();
     if (users[email] && users[email].password === password) {
       showMessage(msg, 'Login bem-sucedido (fallback)! Redirecionando...', false);
-      setTimeout(() => { window.location.href = './'; }, 800);
+      setTimeout(() => { window.location.href = './welcome.html'; }, 800);
     } else {
       showMessage(msg, 'Credenciais inválidas. Verifique ou crie uma conta.');
     }
@@ -67,7 +67,7 @@ loginForm.addEventListener('submit', async (e) => {
 
   if (res.ok) {
     showMessage(msg, 'Login bem-sucedido! Redirecionando...', false);
-    setTimeout(() => { window.location.href = './'; }, 800);
+    setTimeout(() => { window.location.href = './welcome.html'; }, 800);
   } else {
     showMessage(msg, res.data && res.data.message ? res.data.message : 'Erro ao logar');
   }
