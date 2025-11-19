@@ -56,15 +56,15 @@ class Musica {
   formatarDuracao() {
     const min = Math.floor(this.duracao / 60);
     const seg = this.duracao % 60;
-    return `${min}:${seg.toString().padStart(2,'0')}`;
+    return `${min}:${seg.toString().padStart(2, "0")}`;
   }
 }
 
 // Copilot: explique o método formatarDuracao e por que é útil
 
 // Dados falsos iniciais (substituir depois por fetch para o MongoDB Data API)
-const restauranteExemplo = new Restaurante('Sabor Bom', 'Rua A, 123');
-restauranteExemplo.adicionarPrato(new Prato('Prato do Dia', 25.0));
+const restauranteExemplo = new Restaurante("Sabor Bom", "Rua A, 123");
+restauranteExemplo.adicionarPrato(new Prato("Prato do Dia", 25.0));
 
 console.log(restauranteExemplo.listarPratos());
 
